@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     }
     @Override
     public boolean onContextItemSelected(MenuItem item) {
-        if(wordClicked.equalsIgnoreCase("DBS")){
+        if(wordClicked.equalsIgnoreCase("DBS") && wordClicked.equalsIgnoreCase("ديسيبل") && wordClicked.equalsIgnoreCase("星展银行")){
             if(item.getItemId()==0) { //check whether the selected menu item ID is 0
                 //code for action
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.dbs.com.sg"));
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;  //menu item successfully handled
             }
         }
-        if(wordClicked.equalsIgnoreCase("OCBC")){
+        if(wordClicked.equalsIgnoreCase("OCBC")&& wordClicked.equalsIgnoreCase("أوك بي سي") && wordClicked.equalsIgnoreCase("华侨银行")){
             if(item.getItemId()==0) { //check whether the selected menu item ID is 0
                 //code for action
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.OCBC.com"));
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;  //menu item successfully handled
             }
         }
-        if(wordClicked.equalsIgnoreCase("UOB")){
+        if(wordClicked.equalsIgnoreCase("UOB")&& wordClicked.equalsIgnoreCase("جامعة البحرين") && wordClicked.equalsIgnoreCase("大华银行")){
             if(item.getItemId()==0) { //check whether the selected menu item ID is 0
                 //code for action
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.UOB.com.sg"));
@@ -111,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
             textViewDBS.setText("DBS");
             textViewOCBC.setText("OCBC");
             textViewUOB.setText("UOB");
+
 
             return true;
         } else if (id == R.id.arabicSelection) {
