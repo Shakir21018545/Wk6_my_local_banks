@@ -119,6 +119,13 @@ public class MainActivity extends AppCompatActivity {
             textViewUOB.setText("جامعة البحرين");
 
             return true;
+        } else if (id == R.id.chineseSelection) {
+            textViewDBS.setText("星展银行");
+            textViewOCBC.setText("华侨银行");
+            textViewUOB.setText("大华银行");
+
+            return true;
+
         } else {
             textViewDBS.setText("Error translation");
             textViewOCBC.setText("Error translation");

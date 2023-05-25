@@ -8,6 +8,9 @@
         android:id="@+id/arabicSelection"
         android:orderInCategory="101"
         android:title="Arabic" />
-
+    <item
+        android:id="@+id/chineseSelection"
+        android:orderInCategory="101"
+        android:title="Chinese" />
 
 </menu>
